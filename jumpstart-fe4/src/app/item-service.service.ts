@@ -21,7 +21,11 @@ export class ItemServiceService {
     return this.http.post('http://localhost:8081/postItem', body);
   }
 
-
+  updateItem(carBrandInput: string, carQuantityInput: number) {
+    console.log('car brand: ' + carBrandInput + ', quantity: ' + carQuantityInput);
+    let body: Order = new Order(4, carBrandInput, carQuantityInput);
+    return this.http.put('http://localhost:8081/putItem', body);
+  }
 }
 
 class Order {

@@ -7,12 +7,14 @@ import {ItemListComponent} from './item-list/item-list.component';
 import {AddItemComponent} from './add-item/add-item.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { OrderUpdateComponent } from './order-update/order-update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemListComponent,
-    AddItemComponent
+    AddItemComponent,
+    OrderUpdateComponent
   ],
   imports: [
     BrowserModule,
